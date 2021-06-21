@@ -1,0 +1,64 @@
+{
+  "tareas": [
+    {
+      "nombreAda4": "SERVICIO_SYNC_RECLAMOS",
+      "nombreVisual": "reclamos",
+      "intervalo": 10,
+      "semaforo": {
+        "activa": 60,
+        "intermedia": 5760,
+        "apagada": 5761
+      }
+    },
+    {
+      "nombreAda4": "SERVICIO_SYNC_FACTURAS_ONLINE",
+      "nombreVisual": "facturas_online",
+      "intervalo": 10,
+      "semaforo": {
+        "activa": 60,
+        "intermedia": 5760,
+        "apagada": 5761
+      }
+    },
+    {
+      "nombreAda4": "SERVICIO_SYNC_PERFIT",
+      "nombreVisual": "perfit",
+      "intervalo": 10,
+      "semaforo": {
+        "activa": 60,
+        "intermedia": 5760,
+        "apagada": 5761
+      }
+    },
+    {
+      "nombreAda4": "SERVICIO_SYNC_PROVEEDORES",
+      "nombreVisual": "proveedores",
+      "intervalo": 720,
+      "semaforo": {
+        "activa": 720,
+        "intermedia": 1440,
+        "apagada": 1441
+      }
+    },
+    {
+      "nombreAda4": "SERVICIO_SYNC_USUARIOS",
+      "nombreVisual": "usuarios",
+      "intervalo": 10,
+      "semaforo": {
+        "activa": 60,
+        "intermedia": 5760,
+        "apagada": 5761
+      }
+    },
+    {
+      "nombreAda4": "SERVICIO_SYNC_DEUDORES",
+      "nombreVisual": "deudores",
+      "intervalo": 720,
+      "semaforo": {
+        "activa": 720,
+        "intermedia": 1440,
+        "apagada": 1441
+      }
+    }
+  ]
+}

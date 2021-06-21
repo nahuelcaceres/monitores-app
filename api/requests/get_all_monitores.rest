@@ -1,0 +1,2 @@
+GET http://localhost:3005/api/monitores HTTP/1.1
+

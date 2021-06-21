@@ -1,0 +1,4 @@
+DELETE  http://localhost:3005/api/monitores/codigoascii HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+
+codigoascii=5553

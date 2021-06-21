@@ -1,0 +1,29 @@
+{
+  "name": "monitores-app",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Monitorear el estado de las tareas en nuestros clientes.",
+  "workspaces": [
+    "api",
+    "app"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "eslintConfig": {
+    "extends": "./node_modules/standard/eslintrc.json",
+    "env": {
+      "cypress/globals": true
+    },
+    "plugins": [
+      "cypress"
+    ]
+  },
+  "devDependencies": {
+    "eslint-plugin-cypress": "2.11.2",
+    "standard": "16.0.3"
+  },
+  "author": "Nahuel Caceres",
+  "license": "ISC"
+}

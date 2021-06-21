@@ -1,0 +1,105 @@
+h1 {
+  color: green;
+  font-style: italic;
+}
+
+.note {
+color: grey;
+padding-top: 3px;
+font-size: 15px;
+}
+
+.error {
+color: red;
+background: lightgrey;
+font-size: 20px;
+border-style: solid;
+border-radius: 5px;
+padding: 10px;
+margin-bottom: 10px;
+}  
+
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
+
+body {
+  font-family: "Quicksand", sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  color: #4d4d4d;
+}
+
+#title {
+  text-align: center;
+}
+
+#tareas {
+  border-collapse: collapse;
+  border: 3px solid #ddd;
+}
+
+#tareas td,
+#tareas th {
+  border: 1px solid #ddd;
+  padding: 7px;
+  text-align: center;
+}
+
+#tareas tr:hover {
+  background-color: rgb(231, 224, 224);
+}
+
+#tareas th {
+  padding: 10px;
+  text-align: center;
+  background-color: #041404;
+  color: white;
+}
+
+.ttarea-activa{
+  background-color: rgb(55, 216, 55);
+  border-radius: 20px;
+  transition: transform .4s;
+}
+
+.ttarea-activa:hover{
+  transform: scale(1.1);
+}
+
+.ttarea-inactiva{
+  background-color: rgb(209, 123, 111);
+  border-radius: 20px;
+  transition: transform .4s;
+}
+.ttarea-inactiva:hover{
+  transform: scale(1.1);
+}
+.opration {
+  text-align: center;
+}
+
+.chipEstado {
+  background-Color: green; 
+  color: white
+}
+
+.filtrarAdmin{
+	margin-left: 15px;
+}
+
+.button {
+  border: none;
+  outline: none;
+  font-size: 11px;
+  font-family: "Quicksand", sans-serif;
+  color: #f44336;
+  padding: 3px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 1px solid #f44336;
+  background-color: transparent;
+}
+
+.button:active {
+  border: 1px solid blue;
+}

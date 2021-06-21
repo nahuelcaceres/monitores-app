@@ -1,0 +1,119 @@
+{
+  "administraciones": [
+    {
+      "id": 1,
+      "codigoascii": 5553,
+      "codigosasa": "75",
+      "detalle": "Mendonca & Piran",
+      "nube": false,
+      "ultimosync": "2021-05-30T17:30:31.098Z",
+      "tareas": [
+        {
+          "nombre": "SERVICIO_SYNC_RECLAMOS",
+          "activa": true,
+          "descripcion": "Matiene sincronizado los reclamos que ingresan en consorciosenred con ada4d",
+          "intervalo": 10,
+          "ultimaEjecucion": "2021-06-10T00:30:31.098Z"
+        },
+        {
+          "nombre": "SERVICIO_SYNC_FACTURAS_ONLINE",
+          "activa": true,
+          "descripcion": "Matiene sincronizado las facturas online via consorciosenred contra ada4d",
+          "intervalo": 10,
+          "ultimaEjecucion": "2021-06-08T00:30:31.098Z"
+        },
+        {
+          "nombre": "SERVICIO_SYNC_PERFIT",
+          "activa": true,
+          "descripcion": "Realiza los envios de mail de ada4d",
+          "intervalo": 10,
+          "ultimaEjecucion": "2021-06-10T11:20:31.098Z"
+        },
+        {
+          "nombre": "SERVICIO_SYNC_PROVEEDORES",
+          "activa": true,
+          "descripcion": "Realiza la sincronizacion de proveedores en azure",
+          "intervalo": 720,
+          "ultimaEjecucion": "2021-05-07T11:30:31.098Z"
+        }
+
+      ]
+    },
+    {
+      "id": 2,
+      "codigoascii": 7376,
+      "codigosasa": "IL",
+      "detalle": "Admin SASA",
+      "nube": true,
+      "ultimosync": "2021-04-30T11:24:41.098Z",
+      "tareas": [
+        {
+          "nombre": "SERVICIO_SYNC_RECLAMOS",
+          "activa": true,
+          "descripcion": "Matiene sincronizado los reclamos que ingresan en consorciosenred con ada4d",
+          "intervalo": 10,
+          "ultimaEjecucion": "2021-06-15T09:30:31.098Z"
+        },
+        {
+          "nombre": "SERVICIO_SYNC_FACTURAS_ONLINE",
+          "activa": false,
+          "descripcion": "Matiene sincronizado las facturas online via consorciosenred contra ada4d",
+          "intervalo": 10,
+          "ultimaEjecucion": "2021-05-07T11:30:31.098Z"
+        },
+        {
+          "nombre": "SERVICIO_SYNC_PERFIT",
+          "activa": true,
+          "descripcion": "Realiza los envios de mail de ada4d",
+          "intervalo": 10,
+          "ultimaEjecucion": "2021-06-15T12:02:31.098Z"
+        },
+        {
+          "nombre": "SERVICIO_SYNC_USUARIOS",
+          "activa": true,
+          "descripcion": "Realiza la sincronizacion de usuarios en azure",
+          "intervalo": 1440,
+          "ultimaEjecucion": "2021-05-07T11:30:31.098Z"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "codigoascii": 7756,
+      "codigosasa": "64",
+      "detalle": "BienBravas",
+      "nube": false,
+      "ultimosync": "2021-05-30T17:30:31.098Z",
+      "tareas": [
+        {
+          "nombre": "SERVICIO_SYNC_RECLAMOS",
+          "activa": true,
+          "descripcion": "Matiene sincronizado los reclamos que ingresan en consorciosenred con ada4d",
+          "intervalo": 10,
+          "ultimaEjecucion": "2021-05-07T11:30:31.098Z"
+        },
+        {
+          "nombre": "SERVICIO_SYNC_FACTURAS_ONLINE",
+          "activa": true,
+          "descripcion": "Matiene sincronizado las facturas online via consorciosenred contra ada4d",
+          "intervalo": 10,
+          "ultimaEjecucion": "2021-05-07T11:30:31.098Z"
+        },
+        {
+          "nombre": "SERVICIO_SYNC_PERFIT",
+          "activa": true,
+          "descripcion": "Realiza los envios de mail de ada4d",
+          "intervalo": 10,
+          "ultimaEjecucion": "2021-05-07T11:30:31.098Z"
+        },
+        {
+          "nombre": "SERVICIO_SYNC_PROVEEDORES",
+          "activa": true,
+          "descripcion": "Realiza la sincronizacion de proveedores en azure",
+          "intervalo": 1440,
+          "ultimaEjecucion": "2021-05-07T11:30:31.098Z"
+        }
+      ]
+    }
+  ]
+}
