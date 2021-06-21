@@ -20,13 +20,7 @@
   },
   "eslintConfig": {
     "ignorePatterns": "build",
-    "extends": "./node_modules/standard/eslintrc.json",
-    "env": {
-      "cypress/globals": true
-    },
-    "plugins": [
-      "cypress"
-    ]
+    "extends": "./node_modules/standard/eslintrc.json"
   },
   "devDependencies": {
     "standard": "16.0.3"
