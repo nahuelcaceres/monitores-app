@@ -1,24 +1,24 @@
 import React, { useState, useEffect } from 'react'
-import Note from './components/Note'
-import Notification from './components/Notification'
-import noteService from './services/notes'
-import loginService from './services/login'
+// import Note from './components/Note'
+// import Notification from './components/Notification'
+// import noteService from './services/notes'
+// import loginService from './services/login'
 import administacionService from './services/administraciones'
 import timeAgo from './services/timeAgo'
-import LoginForm from './components/LoginForm.js'
-import NoteForm from './components/NoteForm.js'
+// import LoginForm from './components/LoginForm.js'
+// import NoteForm from './components/NoteForm.js'
 
 const App = () => {
   // const [notes, setNotes] = useState([])
   const [administraciones, setAdministraciones] = useState([])
   const [tareas, setTareas] = useState([])
 
-  const [showAll, setShowAll] = useState(true)
-  const [errorMessage, setErrorMessage] = useState(null)
+  //   const [showAll, setShowAll] = useState(true)
+  //   const [errorMessage, setErrorMessage] = useState(null)
 
-  const [username, setUsername] = useState('')
-  const [password, setPassword] = useState('')
-  const [user, setUser] = useState(null)
+  //   const [username, setUsername] = useState('')
+  //   const [password, setPassword] = useState('')
+  //   const [user, setUser] = useState(null)
 
   // useEffect(() => {
   //   noteService
@@ -45,14 +45,14 @@ const App = () => {
       })
   }, [])
 
-  useEffect(() => {
-    const loggedUserJSON = window.localStorage.getItem('loggedNoteAppUser')
-    if (loggedUserJSON) {
-      const user = JSON.parse(loggedUserJSON)
-      setUser(user)
-      noteService.setToken(user.token)
-    }
-  }, [])
+  //   useEffect(() => {
+  //     const loggedUserJSON = window.localStorage.getItem('loggedNoteAppUser')
+  //     if (loggedUserJSON) {
+  //       const user = JSON.parse(loggedUserJSON)
+  //       setUser(user)
+  //       noteService.setToken(user.token)
+  //     }
+  //   }, [])
 
   const renderHeader = () => {
     return tareas && tareas.map((tarea, index) => {
@@ -77,11 +77,11 @@ const App = () => {
     })
   }
 
-  const handleLogout = () => {
-    setUser(null)
-    noteService.setToken(null)
-    window.localStorage.removeItem('loggedNoteAppUser')
-  }
+  //   const handleLogout = () => {
+  //     setUser(null)
+  //     noteService.setToken(null)
+  //     window.localStorage.removeItem('loggedNoteAppUser')
+  //   }
 
   // const addNote = (noteObject) => {
   //   noteService
@@ -110,31 +110,31 @@ const App = () => {
   //     })
   // }
 
-  const handleLogin = async (event) => {
-    event.preventDefault()
+  //   const handleLogin = async (event) => {
+  //     event.preventDefault()
 
-    try {
-      const user = await loginService.login({
-        username,
-        password
-      })
+  //     try {
+  //       const user = await loginService.login({
+  //         username,
+  //         password
+  //       })
 
-      window.localStorage.setItem(
-        'loggedNoteAppUser', JSON.stringify(user)
-      )
+  //       window.localStorage.setItem(
+  //         'loggedNoteAppUser', JSON.stringify(user)
+  //       )
 
-      noteService.setToken(user.token)
+  //       noteService.setToken(user.token)
 
-      setUser(user)
-      setUsername('')
-      setPassword('')
-    } catch (e) {
-      setErrorMessage('Wrong credentials')
-      setTimeout(() => {
-        setErrorMessage(null)
-      }, 5000)
-    }
-  }
+  //       setUser(user)
+  //       setUsername('')
+  //       setPassword('')
+  //     } catch (e) {
+  //       setErrorMessage('Wrong credentials')
+  //       setTimeout(() => {
+  //         setErrorMessage(null)
+  //       }, 5000)
+  //     }
+  //   }
 
   // const notesToShow = showAll
   //   ? notes
@@ -144,7 +144,7 @@ const App = () => {
     <div>
       <h1 id='title'>Monitoreo de Administraciones</h1>
 
-      <Notification message={errorMessage} />
+      {/* <Notification message={errorMessage} /> */}
 
       {
         // user
